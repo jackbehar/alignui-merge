@@ -1,0 +1,66 @@
+{
+  "categorizedComponents": [
+    {
+      "components": [
+        {
+          "info": {
+            "dirPath": "src/components/Button",
+            "implementation": {
+              "framework": "reactjs",
+              "path": "src/components/Button/Button.jsx",
+              "lang": "javascript"
+            },
+            "presets": [
+              {
+                "path": "src/components/Button/presets/0-default.jsx"
+              }
+            ]
+          },
+          "defaultExported": true,
+          "name": "Button",
+          "properties": [
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "children",
+              "type": {
+                "name": "node",
+                "structure": {}
+              }
+            }
+          ],
+          "wrappers": [],
+          "documentation": {
+            "examples": []
+          },
+          "presets": [
+            {
+              "elements": {
+                "button": {
+                  "name": "Button",
+                  "props": {
+                    "variant": "primary",
+                    "mode": "filled",
+                    "children": "Get Started"
+                  }
+                }
+              },
+              "name": "default",
+              "rootId": "button"
+            }
+          ]
+        }
+      ],
+      "name": "General"
+    }
+  ],
+  "name": "Example Design System",
+  "vcs": {
+    "branchName": "master",
+    "commitHash": "b61d1579b3ff7a1d3c71dd1f39832558a808149a",
+    "paths": {
+      "configPath": "/Users/jackbehar/Downloads/alignui-nextjs-typescript-starter-master/uxpin.config.js",
+      "projectRoot": "/Users/jackbehar/Downloads/alignui-nextjs-typescript-starter-master"
+    }
+  }
+}
