@@ -1,26 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Root } from '../ui/button';
+import { Root } from '../ui/button-group';
 
-function Button(props) {
+export default function ButtonGroup(props) {
   return <Root {...props} />;
 }
 
-Button.propTypes = {
+ButtonGroup.propTypes = {
   /**
    * Content of the component.
    */
   children: PropTypes.node,
-  /**
-   * Defines the variant of the component.
-   */
-  variant: PropTypes.oneOf(['primary', 'neutral', 'error']),
-
-  /**
-   * Defines the mode of the component.
-   */
-  mode: PropTypes.oneOf(['filled', 'stroke', 'lighter', 'ghost']),
-
   /**
    * Defines the size of the component.
    */
@@ -36,5 +26,3 @@ Button.propTypes = {
    */
   className: PropTypes.object,
 };
-
-export { Button as default };
