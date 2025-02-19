@@ -18,13 +18,135 @@
           },
           "defaultExported": true,
           "name": "Button",
+          "componentDescription": "Renders a button or an element styled to resemble a button.",
+          "componentDocUrl": "https://www.alignui.com/docs/ui/button",
           "properties": [
             {
-              "description": "",
+              "description": "Content of the component.",
               "isRequired": false,
               "name": "children",
               "type": {
                 "name": "node",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Defines the variant of the component.",
+              "isRequired": false,
+              "name": "variant",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "primary"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "neutral"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "error"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "Defines the mode of the component.",
+              "isRequired": false,
+              "name": "mode",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "filled"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "stroke"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "lighter"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ghost"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "Defines the size of the component.",
+              "isRequired": false,
+              "name": "size",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "medium"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "small"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "xsmall"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "xxsmall"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "Determines whether the component should behave as a child element.",
+              "isRequired": false,
+              "name": "asChild",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Additional Classes.",
+              "isRequired": false,
+              "name": "className",
+              "type": {
+                "name": "object",
                 "structure": {}
               }
             }
@@ -49,6 +171,474 @@
               "rootId": "button"
             }
           ]
+        },
+        {
+          "info": {
+            "dirPath": "src/components/ButtonGroup",
+            "implementation": {
+              "framework": "reactjs",
+              "path": "src/components/ButtonGroup/ButtonGroup.jsx",
+              "lang": "javascript"
+            },
+            "presets": [
+              {
+                "path": "src/components/ButtonGroup/presets/0-default.jsx"
+              }
+            ]
+          },
+          "defaultExported": true,
+          "name": "ButtonGroup",
+          "componentDescription": "Button groups are a set of buttons sticked together in a horizontal line.",
+          "componentDocUrl": "https://www.alignui.com/docs/ui/button-group",
+          "properties": [
+            {
+              "description": "Content of the component.",
+              "isRequired": false,
+              "name": "children",
+              "type": {
+                "name": "node",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Defines the size of the component.",
+              "isRequired": false,
+              "name": "size",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "medium"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "small"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "xsmall"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "xxsmall"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "Determines whether the component should behave as a child element.",
+              "isRequired": false,
+              "name": "asChild",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Additional Classes.",
+              "isRequired": false,
+              "name": "className",
+              "type": {
+                "name": "object",
+                "structure": {}
+              }
+            }
+          ],
+          "wrappers": [],
+          "documentation": {
+            "examples": []
+          },
+          "presets": [
+            {
+              "elements": {
+                "button-group-1": {
+                  "name": "ButtonGroup",
+                  "props": {
+                    "children": [
+                      {
+                        "uxpinPresetElementId": "button-group-item-1"
+                      },
+                      {
+                        "uxpinPresetElementId": "button-group-item-2"
+                      },
+                      {
+                        "uxpinPresetElementId": "button-group-item-3"
+                      }
+                    ]
+                  }
+                },
+                "button-group-item-1": {
+                  "name": "ButtonGroupItem",
+                  "props": {
+                    "children": "Item 1"
+                  }
+                },
+                "button-group-item-2": {
+                  "name": "ButtonGroupItem",
+                  "props": {
+                    "children": "Item 2"
+                  }
+                },
+                "button-group-item-3": {
+                  "name": "ButtonGroupItem",
+                  "props": {
+                    "children": "Item 3"
+                  }
+                }
+              },
+              "name": "default",
+              "rootId": "button-group-1"
+            }
+          ]
+        },
+        {
+          "info": {
+            "dirPath": "src/components/ButtonGroupItem",
+            "implementation": {
+              "framework": "reactjs",
+              "path": "src/components/ButtonGroupItem/ButtonGroupItem.jsx",
+              "lang": "javascript"
+            },
+            "presets": [
+              {
+                "path": "src/components/ButtonGroupItem/presets/0-default.jsx"
+              }
+            ]
+          },
+          "defaultExported": true,
+          "name": "ButtonGroupItem",
+          "componentDescription": "Button groups are a set of buttons sticked together in a horizontal line.",
+          "componentDocUrl": "https://www.alignui.com/docs/ui/button-group",
+          "properties": [
+            {
+              "description": "Content of the component.",
+              "isRequired": false,
+              "name": "children",
+              "type": {
+                "name": "node",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Determines whether the component should behave as a child element.",
+              "isRequired": false,
+              "name": "asChild",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Additional Classes.",
+              "isRequired": false,
+              "name": "className",
+              "type": {
+                "name": "object",
+                "structure": {}
+              }
+            }
+          ],
+          "wrappers": [],
+          "documentation": {
+            "examples": []
+          },
+          "presets": [
+            {
+              "elements": {
+                "button-group-item-1": {
+                  "name": "ButtonGroupItem",
+                  "props": {
+                    "children": "Button Group Item"
+                  }
+                }
+              },
+              "name": "default",
+              "rootId": "button-group-item-1"
+            }
+          ]
+        },
+        {
+          "info": {
+            "dirPath": "src/components/ButtonGroupIcon",
+            "implementation": {
+              "framework": "reactjs",
+              "path": "src/components/ButtonGroupIcon/ButtonGroupIcon.jsx",
+              "lang": "javascript"
+            },
+            "presets": [
+              {
+                "path": "src/components/ButtonGroupIcon/presets/0-default.jsx"
+              }
+            ]
+          },
+          "defaultExported": true,
+          "name": "ButtonGroupIcon",
+          "componentDescription": "Button groups are a set of buttons sticked together in a horizontal line.",
+          "componentDocUrl": "https://www.alignui.com/docs/ui/button-group",
+          "properties": [
+            {
+              "description": "Content of the component.",
+              "isRequired": false,
+              "name": "children",
+              "type": {
+                "name": "node",
+                "structure": {}
+              }
+            },
+            {
+              "description": "The ButtonGroup.Icon component is polymorphic, allowing you to change the underlying HTML element using the as prop.",
+              "isRequired": false,
+              "name": "as",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            }
+          ],
+          "wrappers": [],
+          "documentation": {
+            "examples": []
+          },
+          "presets": [
+            {
+              "elements": {
+                "button-group-icon-1": {
+                  "name": "ButtonGroupIcon",
+                  "props": {}
+                }
+              },
+              "name": "default",
+              "rootId": "button-group-icon-1"
+            }
+          ]
+        },
+        {
+          "info": {
+            "dirPath": "src/components/Checkbox",
+            "implementation": {
+              "framework": "reactjs",
+              "path": "src/components/Checkbox/Checkbox.jsx",
+              "lang": "javascript"
+            },
+            "presets": [
+              {
+                "path": "src/components/Checkbox/presets/0-default.jsx"
+              }
+            ]
+          },
+          "defaultExported": true,
+          "name": "Checkbox",
+          "componentDescription": "Checkbox is a form control for single and multiple selections.",
+          "componentDocUrl": "https://www.alignui.com/docs/ui/checkbox",
+          "properties": [
+            {
+              "description": "Determines whether the component should behave as a child element.\nDefaults to `false`.",
+              "isRequired": false,
+              "name": "asChild",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Whether the checkbox is checked by default.",
+              "isRequired": false,
+              "name": "defaultChecked",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Whether the checkbox is checked.",
+              "isRequired": false,
+              "name": "checked",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              },
+              "isAutoUpdated": true
+            },
+            {
+              "description": "Callback function triggered when the checked state changes.",
+              "isRequired": false,
+              "name": "onCheckedChange",
+              "type": {
+                "name": "func",
+                "structure": {}
+              },
+              "autoUpdate": {
+                "targetPropName": "checked",
+                "valuePath": "0"
+              }
+            },
+            {
+              "description": "Whether the checkbox is disabled.",
+              "isRequired": false,
+              "name": "disabled",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Whether the checkbox is required.",
+              "isRequired": false,
+              "name": "required",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "The name of the checkbox input.",
+              "isRequired": false,
+              "name": "name",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "description": "The value associated with the checkbox.",
+              "isRequired": false,
+              "name": "value",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            }
+          ],
+          "wrappers": [],
+          "documentation": {
+            "examples": []
+          },
+          "presets": []
+        },
+        {
+          "info": {
+            "dirPath": "src/components/Switch",
+            "implementation": {
+              "framework": "reactjs",
+              "path": "src/components/Switch/Switch.jsx",
+              "lang": "javascript"
+            },
+            "presets": [
+              {
+                "path": "src/components/Switch/presets/0-default.jsx"
+              }
+            ]
+          },
+          "defaultExported": true,
+          "name": "Switch",
+          "componentDescription": "Switch is used to immediately toggle a setting on or off.",
+          "componentDocUrl": "https://www.alignui.com/docs/ui/switch",
+          "properties": [
+            {
+              "description": "Determines whether the component should behave as a child element.\nDefaults to `false`.",
+              "isRequired": false,
+              "name": "asChild",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Whether the checkbox is checked by default.",
+              "isRequired": false,
+              "name": "defaultChecked",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Whether the checkbox is checked.",
+              "isRequired": false,
+              "name": "checked",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              },
+              "isAutoUpdated": true
+            },
+            {
+              "description": "Callback function triggered when the checked state changes.",
+              "isRequired": false,
+              "name": "onCheckedChange",
+              "type": {
+                "name": "func",
+                "structure": {}
+              },
+              "autoUpdate": {
+                "targetPropName": "checked",
+                "valuePath": "0"
+              }
+            },
+            {
+              "description": "Whether the checkbox is disabled.",
+              "isRequired": false,
+              "name": "disabled",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Whether the checkbox is required.",
+              "isRequired": false,
+              "name": "required",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "The name of the checkbox input.",
+              "isRequired": false,
+              "name": "name",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "description": "The value associated with the checkbox.",
+              "isRequired": false,
+              "name": "value",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            }
+          ],
+          "wrappers": [],
+          "documentation": {
+            "examples": []
+          },
+          "presets": [
+            {
+              "elements": {
+                "switch-1": {
+                  "name": "Switch",
+                  "props": {}
+                }
+              },
+              "name": "default",
+              "rootId": "switch-1"
+            }
+          ]
         }
       ],
       "name": "General"
@@ -57,10 +647,10 @@
   "name": "Example Design System",
   "vcs": {
     "branchName": "master",
-    "commitHash": "674cc846f3ca4ce5d276f3a1d5414f4cf6909d78",
+    "commitHash": "a84fca67e7225004267149f3ae4f2e2bf8267028",
     "paths": {
-      "configPath": "/Users/roberthilscher/apps/alignui-nextjs-typescript-starter-master/uxpin.config.js",
-      "projectRoot": "/Users/roberthilscher/apps/alignui-nextjs-typescript-starter-master"
+      "configPath": "/Users/jackbehar/Downloads/alignui-nextjs-typescript-starter-master/uxpin.config.js",
+      "projectRoot": "/Users/jackbehar/Downloads/alignui-nextjs-typescript-starter-master"
     }
   }
 }

@@ -1,7 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Root } from '../ui/switch';
-
+/**
+ * @uxpindocurl https://www.alignui.com/docs/ui/switch
+ * @uxpindescription Switch is used to immediately toggle a setting on or off.
+ */
 export default function Switch(props) {
   return <Root {...props} />;
 }

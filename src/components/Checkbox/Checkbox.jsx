@@ -1,7 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Root } from '../ui/checkbox';
-
+/**
+ * @uxpindocurl https://www.alignui.com/docs/ui/checkbox
+ * @uxpindescription Checkbox is a form control for single and multiple selections.
+ */
 export default function Checkbox(props) {
   return <Root {...props} />;
 }

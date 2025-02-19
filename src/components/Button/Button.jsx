@@ -1,7 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Root } from '../ui/button';
-
+/**
+ * @uxpindocurl https://www.alignui.com/docs/ui/button
+ * @uxpindescription Renders a button or an element styled to resemble a button.
+ */
 function Button(props) {
   return <Root {...props} />;
 }
