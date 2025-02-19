@@ -1,38 +1,10 @@
-<p align="center">
-  <a href="https://alignui.com">
-    <img src="./public/images/logo.svg" height="96">
-    <h3 align="center">AlignUI Design System</h3>
-  </a>
-  <p align="center">The Design System You Need</p>
-</p>
+# AlignUI Merge Sample Boilerplate
 
-[Join the AlignUI Community](https://discord.gg/alignui)
+Simple integration of merge and Align UI
 
-# AlignUI Starter Template with Next.js
+Steps to start:
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Features
-
-- 🔸 Includes all styles
-- 🔸 Ready-to-use Tailwind setup
-- 🔸 All base components included
-- 🔸 All utils included
-- 🔸 Inter font setup
-- 🔸 Dark mode toggle included
-
-## Getting Started
-
-**Install dependencies**
-
-```bash
-pnpm i
-```
-
-**Run the development server:**
-
-```bash
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. To install run: `yarn install`
+2. To open UXPin Merge Experimental Mode: `npx uxpin-merge --disable-tunneling`
+3. To push the library to UXPin Merge: `npx uxpin-merge push --token <the UXPin library token>`
+4. To push another branch of the library to UXPin Merge: `npx uxpin-merge push --token <the UXPin library token> --branch <The branch to push>`

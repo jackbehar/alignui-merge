@@ -647,7 +647,7 @@
   "name": "Example Design System",
   "vcs": {
     "branchName": "master",
-    "commitHash": "a84fca67e7225004267149f3ae4f2e2bf8267028",
+    "commitHash": "e15f174d02bba08fa0ca6c41fe73540b4446edbf",
     "paths": {
       "configPath": "/Users/jackbehar/Downloads/alignui-nextjs-typescript-starter-master/uxpin.config.js",
       "projectRoot": "/Users/jackbehar/Downloads/alignui-nextjs-typescript-starter-master"
