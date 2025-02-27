@@ -10,6 +10,8 @@ module.exports = {
           'src/components/ButtonGroupIcon/ButtonGroupIcon.jsx',
           'src/components/Checkbox/Checkbox.jsx',
           'src/components/Switch/Switch.jsx',
+          'src/components/RadioGroup/RadioGroup.jsx',
+          'src/components/RadioGroup/Item/Item.jsx',
         ],
       },
     ],

@@ -639,6 +639,355 @@
               "rootId": "switch-1"
             }
           ]
+        },
+        {
+          "info": {
+            "dirPath": "src/components/RadioGroup",
+            "implementation": {
+              "framework": "reactjs",
+              "path": "src/components/RadioGroup/RadioGroup.jsx",
+              "lang": "javascript"
+            },
+            "presets": [
+              {
+                "path": "src/components/RadioGroup/presets/0-default.jsx"
+              }
+            ]
+          },
+          "defaultExported": true,
+          "name": "RadioGroup",
+          "componentDescription": "Checkbox is a form control for single and multiple selections.",
+          "componentDocUrl": "https://www.alignui.com/docs/ui/checkbox",
+          "properties": [
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "children",
+              "type": {
+                "name": "node",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "asChild",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "defaultValue",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "description": "If true, expands the accordion, otherwise collapse it. Setting this prop enables control over the accordion.",
+              "isRequired": false,
+              "name": "value",
+              "type": {
+                "name": "string",
+                "structure": {}
+              },
+              "isAutoUpdated": true
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "onValueChange",
+              "type": {
+                "name": "func",
+                "structure": {}
+              },
+              "autoUpdate": {
+                "targetPropName": "value",
+                "valuePath": "0"
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "disabled",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "name",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "required",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "orientation",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "horizontal"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "vertical"
+                      }
+                    },
+                    {
+                      "structure": {}
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "dir",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ltr"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "rtl"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "loop",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            }
+          ],
+          "wrappers": [],
+          "documentation": {
+            "examples": []
+          },
+          "presets": [
+            {
+              "elements": {
+                "radio-group-1": {
+                  "name": "RadioGroup",
+                  "props": {
+                    "value": "r1",
+                    "children": [
+                      {
+                        "uxpinPresetElementId": "radio-group-item-1"
+                      },
+                      {
+                        "uxpinPresetElementId": "radio-group-item-2"
+                      }
+                    ]
+                  }
+                },
+                "radio-group-item-1": {
+                  "name": "RadioGroup.Item",
+                  "props": {
+                    "value": "r1"
+                  }
+                },
+                "radio-group-item-2": {
+                  "name": "RadioGroup.Item",
+                  "props": {
+                    "value": "r2"
+                  }
+                }
+              },
+              "name": "default",
+              "rootId": "radio-group-1"
+            }
+          ]
+        },
+        {
+          "info": {
+            "dirPath": "src/components/RadioGroup/Item",
+            "implementation": {
+              "framework": "reactjs",
+              "path": "src/components/RadioGroup/Item/Item.jsx",
+              "lang": "javascript"
+            },
+            "presets": [
+              {
+                "path": "src/components/RadioGroup/Item/presets/0-default.jsx"
+              }
+            ]
+          },
+          "defaultExported": true,
+          "name": "Item",
+          "namespace": {
+            "importSlug": "RadioGroup_Item",
+            "name": "RadioGroup"
+          },
+          "componentDescription": "Checkbox is a form control for single and multiple selections.",
+          "componentDocUrl": "https://www.alignui.com/docs/ui/checkbox",
+          "properties": [
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "asChild",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "defaultValue",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "value",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "onValueChange",
+              "type": {
+                "name": "func",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "disabled",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "name",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "required",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "orientation",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "horizontal"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "vertical"
+                      }
+                    },
+                    {
+                      "structure": {}
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "dir",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ltr"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "rtl"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "loop",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            }
+          ],
+          "wrappers": [],
+          "documentation": {
+            "examples": []
+          },
+          "presets": []
         }
       ],
       "name": "General"
@@ -647,7 +996,7 @@
   "name": "Example Design System",
   "vcs": {
     "branchName": "master",
-    "commitHash": "e15f174d02bba08fa0ca6c41fe73540b4446edbf",
+    "commitHash": "7dcaf7f8a3bbb97e79aa2be8bf449a256a4267e7",
     "paths": {
       "configPath": "/Users/jackbehar/Downloads/alignui-nextjs-typescript-starter-master/uxpin.config.js",
       "projectRoot": "/Users/jackbehar/Downloads/alignui-nextjs-typescript-starter-master"

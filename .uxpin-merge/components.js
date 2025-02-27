@@ -6,7 +6,9 @@ import ButtonGroupItem from '../src/components/ButtonGroupItem/ButtonGroupItem';
 import ButtonGroupIcon from '../src/components/ButtonGroupIcon/ButtonGroupIcon';
 import Checkbox from '../src/components/Checkbox/Checkbox';
 import Switch from '../src/components/Switch/Switch';
+import RadioGroup from '../src/components/RadioGroup/RadioGroup';
 import Wrapper from '../src/components/UXPinWrapper/UXPinWrapper.js';
+const RadioGroup_Item = RadioGroup.Item;
 export {
   Button,
   ButtonGroup,
@@ -14,6 +16,8 @@ export {
   ButtonGroupIcon,
   Checkbox,
   Switch,
+  RadioGroup,
+  RadioGroup_Item,
   Wrapper,
   React,
   ReactDOM,
