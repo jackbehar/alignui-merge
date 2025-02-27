@@ -70,9 +70,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _ui_button_group__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../ui/button-group */ "./src/components/ui/button-group.tsx");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _Root_Root__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Root/Root */ "./src/components/ButtonGroup/Root/Root.jsx");
+/* harmony import */ var _Item_Item__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Item/Item */ "./src/components/ButtonGroup/Item/Item.jsx");
+/* harmony import */ var _Icon_Icon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Icon/Icon */ "./src/components/ButtonGroup/Icon/Icon.jsx");
+
+
 
 
 
@@ -81,17 +85,92 @@ __webpack_require__.r(__webpack_exports__);
  * @uxpindescription Button groups are a set of buttons sticked together in a horizontal line.
  */
 function ButtonGroup(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_button_group__WEBPACK_IMPORTED_MODULE_1__.Root, props);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "Empty Namespace - Do not use");
 }
+ButtonGroup.Root = _Root_Root__WEBPACK_IMPORTED_MODULE_1__["default"];
+ButtonGroup.Item = _Item_Item__WEBPACK_IMPORTED_MODULE_2__["default"];
+ButtonGroup.Icon = _Icon_Icon__WEBPACK_IMPORTED_MODULE_3__["default"];
 ButtonGroup.propTypes = {
+  /**
+   * Content of the component.
+   */
+  children: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().node)
+};
+
+/***/ }),
+
+/***/ "./src/components/ButtonGroup/Icon/Icon.jsx":
+/*!**************************************************!*\
+  !*** ./src/components/ButtonGroup/Icon/Icon.jsx ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Icon)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _ui_button_group__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../ui/button-group */ "./src/components/ui/button-group.tsx");
+
+
+
+/**
+ * @uxpindocurl https://www.alignui.com/docs/ui/button-group
+ * @uxpindescription Button groups are a set of buttons sticked together in a horizontal line.
+ * @uxpinnamespace ButtonGroup
+ */
+function Icon(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_button_group__WEBPACK_IMPORTED_MODULE_1__.Icon, props);
+}
+Icon.propTypes = {
   /**
    * Content of the component.
    */
   children: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().node),
   /**
-   * Defines the size of the component.
+   * The ButtonGroup.Icon component is polymorphic, allowing you to change the underlying HTML element using the as prop.
    */
-  size: prop_types__WEBPACK_IMPORTED_MODULE_2___default().oneOf(['medium', 'small', 'xsmall', 'xxsmall']),
+  as: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().node)
+};
+
+/***/ }),
+
+/***/ "./src/components/ButtonGroup/Item/Item.jsx":
+/*!**************************************************!*\
+  !*** ./src/components/ButtonGroup/Item/Item.jsx ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Item)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _ui_button_group__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../ui/button-group */ "./src/components/ui/button-group.tsx");
+
+
+
+/**
+ * @uxpindocurl https://www.alignui.com/docs/ui/button-group
+ * @uxpindescription Button groups are a set of buttons sticked together in a horizontal line.
+ * @uxpinnamespace ButtonGroup
+ */
+function Item(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_button_group__WEBPACK_IMPORTED_MODULE_1__.Item, props);
+}
+Item.propTypes = {
+  /**
+   * Content of the component.
+   */
+  children: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().node),
   /**
    * Determines whether the component should behave as a child element.
    */
@@ -104,76 +183,42 @@ ButtonGroup.propTypes = {
 
 /***/ }),
 
-/***/ "./src/components/ButtonGroupIcon/ButtonGroupIcon.jsx":
-/*!************************************************************!*\
-  !*** ./src/components/ButtonGroupIcon/ButtonGroupIcon.jsx ***!
-  \************************************************************/
+/***/ "./src/components/ButtonGroup/Root/Root.jsx":
+/*!**************************************************!*\
+  !*** ./src/components/ButtonGroup/Root/Root.jsx ***!
+  \**************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ ButtonGroupIcon)
+/* harmony export */   "default": () => (/* binding */ Root)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _ui_button_group__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../ui/button-group */ "./src/components/ui/button-group.tsx");
+/* harmony import */ var _ui_button_group__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../ui/button-group */ "./src/components/ui/button-group.tsx");
 
 
 
 /**
  * @uxpindocurl https://www.alignui.com/docs/ui/button-group
  * @uxpindescription Button groups are a set of buttons sticked together in a horizontal line.
+ * @uxpinnamespace ButtonGroup
  */
-function ButtonGroupIcon(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_button_group__WEBPACK_IMPORTED_MODULE_1__.Icon, props);
+function Root(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_button_group__WEBPACK_IMPORTED_MODULE_1__.Root, props);
 }
-ButtonGroupIcon.propTypes = {
+Root.propTypes = {
   /**
    * Content of the component.
    */
   children: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().node),
   /**
-   * The ButtonGroup.Icon component is polymorphic, allowing you to change the underlying HTML element using the as prop.
+   * Defines the size of the component.
    */
-  as: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string)
-};
-
-/***/ }),
-
-/***/ "./src/components/ButtonGroupItem/ButtonGroupItem.jsx":
-/*!************************************************************!*\
-  !*** ./src/components/ButtonGroupItem/ButtonGroupItem.jsx ***!
-  \************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ ButtonGroupItem)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _ui_button_group__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../ui/button-group */ "./src/components/ui/button-group.tsx");
-
-
-
-/**
- * @uxpindocurl https://www.alignui.com/docs/ui/button-group
- * @uxpindescription Button groups are a set of buttons sticked together in a horizontal line.
- */
-function ButtonGroupItem(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ui_button_group__WEBPACK_IMPORTED_MODULE_1__.Item, props);
-}
-ButtonGroupItem.propTypes = {
-  /**
-   * Content of the component.
-   */
-  children: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().node),
+  size: prop_types__WEBPACK_IMPORTED_MODULE_2___default().oneOf(['medium', 'small', 'xsmall', 'xxsmall']),
   /**
    * Determines whether the component should behave as a child element.
    */
@@ -315,7 +360,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _components_ui_radio__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/components/ui/radio */ "./src/components/ui/radio.tsx");
 /* harmony import */ var _Item_Item__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Item/Item */ "./src/components/RadioGroup/Item/Item.jsx");
-function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 
 
 
@@ -326,10 +370,7 @@ function _extends() { return _extends = Object.assign ? Object.assign.bind() : f
  * @uxpindescription Checkbox is a form control for single and multiple selections.
  */
 function RadioGroup(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ui_radio__WEBPACK_IMPORTED_MODULE_1__.Group, _extends({
-    defaultValue: "r1",
-    className: "flex gap-2"
-  }, props));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ui_radio__WEBPACK_IMPORTED_MODULE_1__.Group, props, props.children);
 }
 RadioGroup.Item = _Item_Item__WEBPACK_IMPORTED_MODULE_2__["default"];
 RadioGroup.propTypes = {
@@ -48167,27 +48208,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   Button: () => (/* reexport safe */ _src_components_Button_Button__WEBPACK_IMPORTED_MODULE_2__["default"]),
 /* harmony export */   ButtonGroup: () => (/* reexport safe */ _src_components_ButtonGroup_ButtonGroup__WEBPACK_IMPORTED_MODULE_3__["default"]),
-/* harmony export */   ButtonGroupIcon: () => (/* reexport safe */ _src_components_ButtonGroupIcon_ButtonGroupIcon__WEBPACK_IMPORTED_MODULE_5__["default"]),
-/* harmony export */   ButtonGroupItem: () => (/* reexport safe */ _src_components_ButtonGroupItem_ButtonGroupItem__WEBPACK_IMPORTED_MODULE_4__["default"]),
-/* harmony export */   Checkbox: () => (/* reexport safe */ _src_components_Checkbox_Checkbox__WEBPACK_IMPORTED_MODULE_6__["default"]),
-/* harmony export */   RadioGroup: () => (/* reexport safe */ _src_components_RadioGroup_RadioGroup__WEBPACK_IMPORTED_MODULE_8__["default"]),
+/* harmony export */   ButtonGroup_Icon: () => (/* binding */ ButtonGroup_Icon),
+/* harmony export */   ButtonGroup_Item: () => (/* binding */ ButtonGroup_Item),
+/* harmony export */   ButtonGroup_Root: () => (/* binding */ ButtonGroup_Root),
+/* harmony export */   Checkbox: () => (/* reexport safe */ _src_components_Checkbox_Checkbox__WEBPACK_IMPORTED_MODULE_4__["default"]),
+/* harmony export */   RadioGroup: () => (/* reexport safe */ _src_components_RadioGroup_RadioGroup__WEBPACK_IMPORTED_MODULE_6__["default"]),
 /* harmony export */   RadioGroup_Item: () => (/* binding */ RadioGroup_Item),
 /* harmony export */   React: () => (/* reexport module object */ react__WEBPACK_IMPORTED_MODULE_0__),
 /* harmony export */   ReactDOM: () => (/* reexport fake namespace object from non-harmony */ react_dom__WEBPACK_IMPORTED_MODULE_1___namespace_cache || (react_dom__WEBPACK_IMPORTED_MODULE_1___namespace_cache = __webpack_require__.t(react_dom__WEBPACK_IMPORTED_MODULE_1__, 2))),
-/* harmony export */   Switch: () => (/* reexport safe */ _src_components_Switch_Switch__WEBPACK_IMPORTED_MODULE_7__["default"]),
-/* harmony export */   Wrapper: () => (/* reexport safe */ _src_components_UXPinWrapper_UXPinWrapper_js__WEBPACK_IMPORTED_MODULE_9__["default"])
+/* harmony export */   Switch: () => (/* reexport safe */ _src_components_Switch_Switch__WEBPACK_IMPORTED_MODULE_5__["default"]),
+/* harmony export */   Wrapper: () => (/* reexport safe */ _src_components_UXPinWrapper_UXPinWrapper_js__WEBPACK_IMPORTED_MODULE_7__["default"])
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var _src_components_Button_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../src/components/Button/Button */ "./src/components/Button/Button.jsx");
 /* harmony import */ var _src_components_ButtonGroup_ButtonGroup__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../src/components/ButtonGroup/ButtonGroup */ "./src/components/ButtonGroup/ButtonGroup.jsx");
-/* harmony import */ var _src_components_ButtonGroupItem_ButtonGroupItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../src/components/ButtonGroupItem/ButtonGroupItem */ "./src/components/ButtonGroupItem/ButtonGroupItem.jsx");
-/* harmony import */ var _src_components_ButtonGroupIcon_ButtonGroupIcon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../src/components/ButtonGroupIcon/ButtonGroupIcon */ "./src/components/ButtonGroupIcon/ButtonGroupIcon.jsx");
-/* harmony import */ var _src_components_Checkbox_Checkbox__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../src/components/Checkbox/Checkbox */ "./src/components/Checkbox/Checkbox.jsx");
-/* harmony import */ var _src_components_Switch_Switch__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../src/components/Switch/Switch */ "./src/components/Switch/Switch.jsx");
-/* harmony import */ var _src_components_RadioGroup_RadioGroup__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../src/components/RadioGroup/RadioGroup */ "./src/components/RadioGroup/RadioGroup.jsx");
-/* harmony import */ var _src_components_UXPinWrapper_UXPinWrapper_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../src/components/UXPinWrapper/UXPinWrapper.js */ "./src/components/UXPinWrapper/UXPinWrapper.js");
+/* harmony import */ var _src_components_Checkbox_Checkbox__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../src/components/Checkbox/Checkbox */ "./src/components/Checkbox/Checkbox.jsx");
+/* harmony import */ var _src_components_Switch_Switch__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../src/components/Switch/Switch */ "./src/components/Switch/Switch.jsx");
+/* harmony import */ var _src_components_RadioGroup_RadioGroup__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../src/components/RadioGroup/RadioGroup */ "./src/components/RadioGroup/RadioGroup.jsx");
+/* harmony import */ var _src_components_UXPinWrapper_UXPinWrapper_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../src/components/UXPinWrapper/UXPinWrapper.js */ "./src/components/UXPinWrapper/UXPinWrapper.js");
 
 
 
@@ -48196,9 +48236,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
-var RadioGroup_Item = _src_components_RadioGroup_RadioGroup__WEBPACK_IMPORTED_MODULE_8__["default"].Item;
+var ButtonGroup_Root = _src_components_ButtonGroup_ButtonGroup__WEBPACK_IMPORTED_MODULE_3__["default"].Root;
+var ButtonGroup_Icon = _src_components_ButtonGroup_ButtonGroup__WEBPACK_IMPORTED_MODULE_3__["default"].Icon;
+var ButtonGroup_Item = _src_components_ButtonGroup_ButtonGroup__WEBPACK_IMPORTED_MODULE_3__["default"].Item;
+var RadioGroup_Item = _src_components_RadioGroup_RadioGroup__WEBPACK_IMPORTED_MODULE_6__["default"].Item;
 
 })();
 

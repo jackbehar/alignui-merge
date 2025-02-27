@@ -6,8 +6,9 @@ module.exports = {
         include: [
           'src/components/Button/Button.jsx',
           'src/components/ButtonGroup/ButtonGroup.jsx',
-          'src/components/ButtonGroupItem/ButtonGroupItem.jsx',
-          'src/components/ButtonGroupIcon/ButtonGroupIcon.jsx',
+          'src/components/ButtonGroup/Root/Root.jsx',
+          'src/components/ButtonGroup/Icon/Icon.jsx',
+          'src/components/ButtonGroup/Item/Item.jsx',
           'src/components/Checkbox/Checkbox.jsx',
           'src/components/Switch/Switch.jsx',
           'src/components/RadioGroup/RadioGroup.jsx',

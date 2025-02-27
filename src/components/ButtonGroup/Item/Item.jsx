@@ -1,15 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Item } from '../ui/button-group';
+import { Item as ButtonGroupItem } from '../../ui/button-group';
 /**
  * @uxpindocurl https://www.alignui.com/docs/ui/button-group
  * @uxpindescription Button groups are a set of buttons sticked together in a horizontal line.
+ * @uxpinnamespace ButtonGroup
  */
-export default function ButtonGroupItem(props) {
-  return <Item {...props} />;
+export default function Item(props) {
+  return <ButtonGroupItem {...props} />;
 }
 
-ButtonGroupItem.propTypes = {
+Item.propTypes = {
   /**
    * Content of the component.
    */
