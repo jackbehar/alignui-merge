@@ -8,7 +8,7 @@ import Item from './Item/Item';
  * @uxpindescription Checkbox is a form control for single and multiple selections.
  */
 export default function RadioGroup(props) {
-  return <Radio.Group {...props}>{props.children}</Radio.Group>;
+  return <Radio.Group {...props} />;
 }
 
 RadioGroup.Item = Item;

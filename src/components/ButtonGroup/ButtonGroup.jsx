@@ -4,16 +4,11 @@ import Root from './Root/Root';
 import Item from './Item/Item';
 import Icon from './Icon/Icon';
 /**
- * @uxpindocurl https://www.alignui.com/docs/ui/button-group
- * @uxpindescription Button groups are a set of buttons sticked together in a horizontal line.
+ * @uxpindescription Empty Namespace for UXPin - Do not use
  */
 export default function ButtonGroup(props) {
-  return <div>Empty Namespace - Do not use</div>;
+  return <div {...props}>Empty Namespace - Do not use</div>;
 }
-
-ButtonGroup.Root = Root;
-ButtonGroup.Item = Item;
-ButtonGroup.Icon = Icon;
 
 ButtonGroup.propTypes = {
   /**
@@ -21,3 +16,6 @@ ButtonGroup.propTypes = {
    */
   children: PropTypes.node,
 };
+ButtonGroup.Root = Root;
+ButtonGroup.Item = Item;
+ButtonGroup.Icon = Icon;

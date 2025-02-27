@@ -8,7 +8,7 @@ import * as Radio from '@/components/ui/radio';
  * @uxpinnamespace RadioGroup
  */
 export default function Item(props) {
-  return <Radio.Item defaultValue='r1' className='flex gap-2' {...props} />;
+  return <Radio.Item {...props} />;
 }
 
 Item.propTypes = {

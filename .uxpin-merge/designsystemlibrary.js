@@ -81,21 +81,20 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /**
- * @uxpindocurl https://www.alignui.com/docs/ui/button-group
- * @uxpindescription Button groups are a set of buttons sticked together in a horizontal line.
+ * @uxpindescription Empty Namespace for UXPin - Do not use
  */
 function ButtonGroup(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "Empty Namespace - Do not use");
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", props, "Empty Namespace - Do not use");
 }
-ButtonGroup.Root = _Root_Root__WEBPACK_IMPORTED_MODULE_1__["default"];
-ButtonGroup.Item = _Item_Item__WEBPACK_IMPORTED_MODULE_2__["default"];
-ButtonGroup.Icon = _Icon_Icon__WEBPACK_IMPORTED_MODULE_3__["default"];
 ButtonGroup.propTypes = {
   /**
    * Content of the component.
    */
   children: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().node)
 };
+ButtonGroup.Root = _Root_Root__WEBPACK_IMPORTED_MODULE_1__["default"];
+ButtonGroup.Item = _Item_Item__WEBPACK_IMPORTED_MODULE_2__["default"];
+ButtonGroup.Icon = _Icon_Icon__WEBPACK_IMPORTED_MODULE_3__["default"];
 
 /***/ }),
 
@@ -312,7 +311,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_ui_radio__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/components/ui/radio */ "./src/components/ui/radio.tsx");
-function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 
 
 
@@ -323,10 +321,7 @@ function _extends() { return _extends = Object.assign ? Object.assign.bind() : f
  * @uxpinnamespace RadioGroup
  */
 function Item(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ui_radio__WEBPACK_IMPORTED_MODULE_1__.Item, _extends({
-    defaultValue: "r1",
-    className: "flex gap-2"
-  }, props));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ui_radio__WEBPACK_IMPORTED_MODULE_1__.Item, props);
 }
 Item.propTypes = {
   asChild: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
@@ -370,7 +365,7 @@ __webpack_require__.r(__webpack_exports__);
  * @uxpindescription Checkbox is a form control for single and multiple selections.
  */
 function RadioGroup(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ui_radio__WEBPACK_IMPORTED_MODULE_1__.Group, props, props.children);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ui_radio__WEBPACK_IMPORTED_MODULE_1__.Group, props);
 }
 RadioGroup.Item = _Item_Item__WEBPACK_IMPORTED_MODULE_2__["default"];
 RadioGroup.propTypes = {

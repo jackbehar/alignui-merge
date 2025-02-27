@@ -1,4 +1,4 @@
-// import * as React from 'react';
-// import Radio from '../Radio';
+import * as React from 'react';
+import Item from '../Item';
 
-// export default <Radio uxpId='radio-1' />;
+export default <Item uxpId='radio-group-item-1' />;
