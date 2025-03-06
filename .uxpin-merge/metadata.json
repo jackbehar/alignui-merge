@@ -174,81 +174,6 @@
         },
         {
           "info": {
-            "dirPath": "src/components/ButtonGroup",
-            "implementation": {
-              "framework": "reactjs",
-              "path": "src/components/ButtonGroup/ButtonGroup.jsx",
-              "lang": "javascript"
-            },
-            "presets": [
-              {
-                "path": "src/components/ButtonGroup/presets/0-default.jsx"
-              }
-            ]
-          },
-          "defaultExported": true,
-          "name": "ButtonGroup",
-          "componentDescription": "Empty Namespace for UXPin - Do not use",
-          "properties": [
-            {
-              "description": "Content of the component.",
-              "isRequired": false,
-              "name": "children",
-              "type": {
-                "name": "node",
-                "structure": {}
-              }
-            }
-          ],
-          "wrappers": [],
-          "documentation": {
-            "examples": []
-          },
-          "presets": [
-            {
-              "elements": {
-                "button-group-1": {
-                  "name": "ButtonGroup",
-                  "props": {
-                    "children": [
-                      {
-                        "uxpinPresetElementId": "button-group-item-1"
-                      },
-                      {
-                        "uxpinPresetElementId": "button-group-item-2"
-                      },
-                      {
-                        "uxpinPresetElementId": "button-group-item-3"
-                      }
-                    ]
-                  }
-                },
-                "button-group-item-1": {
-                  "name": "ButtonGroup.Item",
-                  "props": {
-                    "children": "Item 1"
-                  }
-                },
-                "button-group-item-2": {
-                  "name": "ButtonGroup.Item",
-                  "props": {
-                    "children": "Item 2"
-                  }
-                },
-                "button-group-item-3": {
-                  "name": "ButtonGroup.Item",
-                  "props": {
-                    "children": "Item 3"
-                  }
-                }
-              },
-              "name": "default",
-              "rootId": "button-group-1"
-            }
-          ]
-        },
-        {
-          "info": {
             "dirPath": "src/components/ButtonGroup/Root",
             "implementation": {
               "framework": "reactjs",
@@ -1089,12 +1014,92 @@
         }
       ],
       "name": "General"
+    },
+    {
+      "components": [
+        {
+          "info": {
+            "dirPath": "src/components/ButtonGroup",
+            "implementation": {
+              "framework": "reactjs",
+              "path": "src/components/ButtonGroup/ButtonGroup.jsx",
+              "lang": "javascript"
+            },
+            "presets": [
+              {
+                "path": "src/components/ButtonGroup/presets/0-default.jsx"
+              }
+            ]
+          },
+          "defaultExported": true,
+          "name": "ButtonGroup",
+          "componentDescription": "Empty Namespace for UXPin - Do not use",
+          "properties": [
+            {
+              "description": "Content of the component.",
+              "isRequired": false,
+              "name": "children",
+              "type": {
+                "name": "node",
+                "structure": {}
+              }
+            }
+          ],
+          "wrappers": [],
+          "documentation": {
+            "examples": []
+          },
+          "presets": [
+            {
+              "elements": {
+                "button-group-1": {
+                  "name": "ButtonGroup",
+                  "props": {
+                    "children": [
+                      {
+                        "uxpinPresetElementId": "button-group-item-1"
+                      },
+                      {
+                        "uxpinPresetElementId": "button-group-item-2"
+                      },
+                      {
+                        "uxpinPresetElementId": "button-group-item-3"
+                      }
+                    ]
+                  }
+                },
+                "button-group-item-1": {
+                  "name": "ButtonGroup.Item",
+                  "props": {
+                    "children": "Item 1"
+                  }
+                },
+                "button-group-item-2": {
+                  "name": "ButtonGroup.Item",
+                  "props": {
+                    "children": "Item 2"
+                  }
+                },
+                "button-group-item-3": {
+                  "name": "ButtonGroup.Item",
+                  "props": {
+                    "children": "Item 3"
+                  }
+                }
+              },
+              "name": "default",
+              "rootId": "button-group-1"
+            }
+          ]
+        }
+      ],
+      "name": "Empty Namespace"
     }
   ],
   "name": "Example Design System",
   "vcs": {
     "branchName": "master",
-    "commitHash": "dda498ef4602d38920f981b7b65ec39e53b13643",
+    "commitHash": "819f4217ceb3bdef17a6eb4f2ad6aa870c1c54dc",
     "paths": {
       "configPath": "/Users/jackbehar/Documents/Repos/alignui-nextjs-typescript-starter-master/uxpin.config.js",
       "projectRoot": "/Users/jackbehar/Documents/Repos/alignui-nextjs-typescript-starter-master"

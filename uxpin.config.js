@@ -5,7 +5,6 @@ module.exports = {
         name: 'General',
         include: [
           'src/components/Button/Button.jsx',
-          'src/components/ButtonGroup/ButtonGroup.jsx',
           'src/components/ButtonGroup/Root/Root.jsx',
           'src/components/ButtonGroup/Icon/Icon.jsx',
           'src/components/ButtonGroup/Item/Item.jsx',
@@ -14,6 +13,10 @@ module.exports = {
           'src/components/RadioGroup/RadioGroup.jsx',
           'src/components/RadioGroup/Item/Item.jsx',
         ],
+      },
+      {
+        name: 'Empty Namespace',
+        include: ['src/components/ButtonGroup/ButtonGroup.jsx'],
       },
     ],
     wrapper: 'src/components/UXPinWrapper/UXPinWrapper.js',
