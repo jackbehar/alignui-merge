@@ -12,6 +12,7 @@ export default function RadioGroup(props) {
 }
 
 RadioGroup.Item = Item;
+
 RadioGroup.propTypes = {
   children: PropTypes.node,
   asChild: PropTypes.bool,
